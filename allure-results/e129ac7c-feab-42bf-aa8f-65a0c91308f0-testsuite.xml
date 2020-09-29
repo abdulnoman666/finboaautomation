@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600964931043' stop='1600965064144'>
+    <name>Dispute Submission Debit Card</name>
+    <title>Dispute Submission Debit Card</title>
+    <test-cases>
+        <test-case start='1600964960950' status='passed' stop='1600965064142'>
+            <name>Debit Card - Manual Transactions - Send to Customer</name>
+            <title>Debit Card - Manual Transactions - Send to Customer</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

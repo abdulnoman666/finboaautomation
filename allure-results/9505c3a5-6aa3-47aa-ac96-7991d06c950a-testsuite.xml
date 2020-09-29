@@ -1,0 +1,70 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600868750336' stop='1600868843040'>
+    <name>Dispute Submission Debit Card</name>
+    <title>Dispute Submission Debit Card</title>
+    <test-cases>
+        <test-case start='1600868774987' status='failed' stop='1600868843039'>
+            <name>Debit Card - Manual Transactions - Send to Customer</name>
+            <title>Debit Card - Manual Transactions - Send to Customer</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Failed: invalid element state
+                  (Session info: chrome=85.0.4183.102)
+                  (Driver info: chromedriver=84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}),platform=Windows NT 10.0.18362 x86_64)</message>
+                <stack-trace>InvalidElementStateError: invalid element state
+                  (Session info: chrome=85.0.4183.102)
+                  (Driver info: chromedriver=84.0.4147.30 (48b3e868b4cc0aa7e8149519690b6f6949e110a8-refs/branch-heads/4147@{#310}),platform=Windows NT 10.0.18362 x86_64)
+                    at Object.checkLegacyResponse (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\error.js:546:15)
+                    at parseHttpResponse (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:509:13)
+                    at C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\http.js:441:30
+                    at processTicksAndRejections (internal/process/task_queues.js:97:5)
+                From: Task: WebElement.clear()
+                    at Driver.schedule (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:807:17)
+                    at WebElement.schedule_ (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:2010:25)
+                    at WebElement.clear (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\webdriver.js:2351:17)
+                    at actionFn (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\built\element.js:89:44)
+                    at Array.map (&lt;anonymous>)
+                    at C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\built\element.js:461:65
+                    at ManagedPromise.invokeCallback_ (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1376:14)
+                    at TaskQueue.execute_ (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3084:14)
+                    at TaskQueue.executeNext_ (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:3067:27)
+                    at C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2927:27Error
+                    at ElementArrayFinder.applyAction_ (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\built\element.js:459:27)
+                    at ElementArrayFinder.&lt;computed> [as clear] (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\built\element.js:91:29)
+                    at ElementFinder.&lt;computed> [as clear] (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\built\element.js:831:22)
+                    at Helper.EnterValue (C:\Users\noumaabd\OneDrive - Constellation HomeBuilder Systems\FinboaProject\HelperFunction\HelperFunctions.js:3:17)
+                    at DisputeSubmission.SelectTransactionMethod (C:\Users\noumaabd\OneDrive - Constellation HomeBuilder Systems\FinboaProject\Pages\DisputeSubmissionPage.js:21:24)
+                    at UserContext.&lt;anonymous> (C:\Users\noumaabd\OneDrive - Constellation HomeBuilder Systems\FinboaProject\Tests\Login.js:29:23)
+                    at C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:108:15
+                    at new ManagedPromise (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:1077:7)
+                    at ControlFlow.promise (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\selenium-webdriver\lib\promise.js:2505:12)
+                    at schedulerExecute (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:95:18)
+                From: Task: Run it("Debit Card - Manual Transactions - Send to Customer") in control flow
+                    at UserContext.&lt;anonymous> (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:94:19)
+                    at attempt (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at QueueRunner.execute (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4199:10)
+                    at Spec.queueRunnerFactory (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:909:35)
+                    at Spec.execute (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:526:10)
+                    at UserContext.fn (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:5340:37)
+                    at attempt (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4297:26)
+                    at QueueRunner.run (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4217:20)
+                    at runNext (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4257:20)
+                From asynchronous test: 
+                Error
+                    at Suite.&lt;anonymous> (C:\Users\noumaabd\OneDrive - Constellation HomeBuilder Systems\FinboaProject\Tests\Login.js:26:1)
+                    at addSpecsToSuite (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+                    at Env.describe (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+                    at describe (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (C:\Users\noumaabd\OneDrive - Constellation HomeBuilder Systems\FinboaProject\Tests\Login.js:5:1)
+                    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+                    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+                    at Module.load (internal/modules/cjs/loader.js:985:32)
+                    at Function.Module._load (internal/modules/cjs/loader.js:878:14)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

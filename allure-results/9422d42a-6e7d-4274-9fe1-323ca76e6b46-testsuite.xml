@@ -1,0 +1,29 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600843850521' stop='1600843876306'>
+    <name>Login into Finboa</name>
+    <title>Login into Finboa</title>
+    <test-cases>
+        <test-case start='1600843850522' status='failed' stop='1600843876304'>
+            <name>encountered a declaration exception</name>
+            <title>encountered a declaration exception</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+            <failure>
+                <message>Error: Login is not a function</message>
+                <stack-trace>Error: Login is not a function
+                    at validateFunction (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:21:11)
+                    at C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasminewd2\index.js:153:16
+                    at Suite.&lt;anonymous> (C:\Users\noumaabd\OneDrive - Constellation HomeBuilder Systems\FinboaProject\Tests\Login.js:10:5)
+                    at addSpecsToSuite (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1107:25)
+                    at Env.describe (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:1074:7)
+                    at describe (C:\Users\noumaabd\AppData\Roaming\npm\node_modules\protractor\node_modules\jasmine-core\lib\jasmine-core\jasmine.js:4399:18)
+                    at Object.&lt;anonymous> (C:\Users\noumaabd\OneDrive - Constellation HomeBuilder Systems\FinboaProject\Tests\Login.js:5:1)
+                    at Module._compile (internal/modules/cjs/loader.js:1137:30)
+                    at Object.Module._extensions..js (internal/modules/cjs/loader.js:1157:10)
+                    at Module.load (internal/modules/cjs/loader.js:985:32)</stack-trace>
+            </failure>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>

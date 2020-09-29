@@ -1,0 +1,15 @@
+<?xml version='1.0'?>
+<ns2:test-suite xmlns:ns2='urn:model.allure.qatools.yandex.ru' start='1600785482746' stop='1600785514070'>
+    <name>Login into Finboa</name>
+    <title>Login into Finboa</title>
+    <test-cases>
+        <test-case start='1600785482746' status='passed' stop='1600785514069'>
+            <name>Login</name>
+            <title>Login</title>
+            <labels/>
+            <parameters/>
+            <steps/>
+            <attachments/>
+        </test-case>
+    </test-cases>
+</ns2:test-suite>
