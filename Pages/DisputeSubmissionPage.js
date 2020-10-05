@@ -12,6 +12,7 @@ let DisputeSubmission = function(){
     let btnAddTransaction = element(by.css('[ng-click="addTransaction(selectedWorkflow.transactionType)"]'));
     let cardNumber = element(by.css('[ng-bind-html-unsafe="match.model.cardNumber | typeaheadHighlight:query"]'));
     let btnSelectTransaction = element(by.css('[ng-click="openTransactions()"]'));
+    let btnSearchByName = element(by.css('[title="Search by name"]'));
 
     this.ClickNewCaseButton = function(){
         HelperFunction.ClickElement(btnNewCase);
@@ -61,8 +62,12 @@ let DisputeSubmission = function(){
         HelperFunction.ClickElement(btnSelectTransaction);
     },
 
-    this.ClickSendToCustomerButton = function(){
-        let element1 = element.all(by.css('[ng-click="emailDispute()"]')).get(1);
+    this.ClickSearchByNameButon = function(){
+        HelperFunction.ClickElement(btnSearchByName);
+    },
+
+    this.ClickNextButton = function(){
+        let element1 = element.all(by.css('[ng-click="saveDisputes()"]')).get(1);
         browser.actions().mouseMove(element1).perform();
         element1.click();
     }

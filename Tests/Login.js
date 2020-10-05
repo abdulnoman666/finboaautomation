@@ -4,6 +4,9 @@ let HomePage = require('../Pages/HomePage.js');
 let DisputeSubmission = require('../Pages/DisputeSubmissionPage.js');
 let AddTransaction = require('../Pages/AddTransactionPage');
 let SelectTransaction = require('../Pages/SelectTransactionPage.js');
+let CustomerSearch = require('../Pages/CustomerSearchPage.js');
+let DisputeForm = require('../Pages/DisputeFormPage.js');
+
 describe('Dispute Submission Debit Card', function(){
     var originalTimeout;
 
@@ -44,8 +47,13 @@ it('Debit Card - Manual Transactions - Send to Customer', function(doneFn){
     
     DisputeSubmission.SelectTransactionMethod("Debit Card");
     DisputeSubmission.ClickFraudRadioButton();
-    DisputeSubmission.EnterCardNumber("1001");
-    DisputeSubmission.ClickCardNumber();
+    DisputeSubmission.ClickSearchByNameButon();
+    browser.sleep(2000);
+    CustomerSearch.EnterCustomerName("singal");
+    CustomerSearch.ClickSearchButton();
+    CustomerSearch.ClickSelectCustomerButton();
+    //DisputeSubmission.EnterCardNumber("1001");
+    //DisputeSubmission.ClickCardNumber();
     DisputeSubmission.EnterName("Abdul Noman - Automated");
     DisputeSubmission.EnterEmail("Abdul@finboa.com");
     DisputeSubmission.EnterPhone("03325166674");
@@ -61,7 +69,11 @@ it('Debit Card - Manual Transactions - Send to Customer', function(doneFn){
     AddTransaction.ClickTransactionPostedCheckbox();
     AddTransaction.ClickSaveButton();
     
-    DisputeSubmission.ClickSendToCustomerButton();
+    DisputeSubmission.ClickNextButton();
+    browser.sleep(5000);
+    DisputeForm.ClickNoRadioButton();
+    DisputeForm.ClickLostRadioButton();
+    DisputeForm.EnterDateDebitCardDiscoveredLostStolen("2020-10-05");
     browser.sleep(20000);
     doneFn();
 });
@@ -73,8 +85,12 @@ it('Debit Card - Select Transactions - Send to Customer', function(doneFn){
     
     DisputeSubmission.SelectTransactionMethod("Debit Card");
     DisputeSubmission.ClickFraudRadioButton();
-    DisputeSubmission.EnterCardNumber("1001");
-    DisputeSubmission.ClickCardNumber();
+    DisputeSubmission.ClickSearchByNameButon();
+    CustomerSearch.EnterCustomerName("singal");
+    CustomerSearch.ClickSearchButton();
+    CustomerSearch.ClickSelectCustomerButton();
+    //DisputeSubmission.EnterCardNumber("1001");
+    //DisputeSubmission.ClickCardNumber();
     DisputeSubmission.EnterName("Abdul Noman - Automated");
     DisputeSubmission.EnterEmail("Abdul@finboa.com");
     DisputeSubmission.EnterPhone("03325166674");
@@ -84,7 +100,7 @@ it('Debit Card - Select Transactions - Send to Customer', function(doneFn){
     SelectTransaction.ClickPlusButton();
     SelectTransaction.ClickCloseButton();
     
-    DisputeSubmission.ClickSendToCustomerButton();
+    DisputeSubmission.ClickNextButton();
     browser.sleep(20000);
     doneFn();
 });
